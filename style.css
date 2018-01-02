@@ -13,9 +13,10 @@ h2{
 }
 
 p{
-  font-size:
-  font-family:
+  font-size: 20px;
+  font-family: 'Courgette', cursive; !important
   text-align: center;
+  color: #465694;
 }
 
 body{
@@ -24,6 +25,13 @@ body{
   background-image: url(images/dinoBackground.jpg);
   background-attachment: fixed;
   background-size: 100%;
+}
+
+img{
+  display: block; !important
+  margin: auto; !important
+  border-radius: 50%; !important
+
 }
 
 #quizBox{
