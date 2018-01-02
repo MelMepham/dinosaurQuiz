@@ -34,6 +34,12 @@ img{
 
 }
 
+.img{
+  display: block; !important
+  margin: auto; !important
+  border-radius: 50%; !important
+
+}
 #quizBox{
   margin: 30px;
   background-color: #FF8054;
