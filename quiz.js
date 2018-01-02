@@ -2,34 +2,45 @@ document.addEventListener('DOMContentLoaded', start)
 
 function start() {
   questions();
+  changeAnswers()
 }
 
-let total = ["0"]
-let answered = -1
+let total = []
+let answered = 0
+let quesQ = ["Do you think you are mostly", "Which super power would you rather have?", "You have to chhange your name to one of these, which would you prefer?", "Your spirit animal is closest to..", "How did 2017 treat you?"]
+let quesA = [
+  ["Friendly", "Invisibility", "Larry", "Bird", "Best year of my life!"],
+  ["Angry", "Fire breathing", "Garry", "Fish", "Thankfully its OVER!"],
+  ["Confused", "Ability to fly", "Barry", "Otter", "Eh."]
+]
+function changeAnswers() {
+  if (total.length === 5) {
+    results()
+  } else {
+  document.getElementById('quesAns').innerHTML = quesQ[answered];
+  document.getElementById('quesA').innerHTML = quesA[0][answered];
+  document.getElementById('quesB').innerHTML = quesA[1][answered];
+  document.getElementById('quesC').innerHTML = quesA[2][answered];
+}
+}
 
 function questions() {
-  let quesQ = ["Do you think you are mostly", "b", "c", "d", "e"]
-  let quesA = [
-    ["Friendly", "b", "c", "d", "e"],
-    ["Angry", "b", "c", "d", "e"],
-    ["Confused", "b", "c", "d", "e"]
-  ]
   var buttons =  document.getElementsByClassName('btn')
   for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function(e) {useButton(e.target.value)}, false)
+    buttons[i].addEventListener('click', function(e) {useButton(e.target.value), answered++, changeAnswers()}, false)
   }
-    for (j = 0; j < total.length; j++) {
-      answered++
-      document.getElementById('quesAns').innerHTML = quesQ[answered];
-      document.getElementById('quesA').innerHTML = quesA[0][answered];
-      document.getElementById('quesB').innerHTML = quesA[1][answered];
-      document.getElementById('quesC').innerHTML = quesA[2][answered];
-    }
 }
-
-
 
  function useButton(que) {
     total.push(que)
+    console.log(total)
+  }
 
+  function results() {
+    num = total.map(Number)
+    results = num[0] + num[1] + num[2] + num[3] + num[4]
+    if (results < 6) {
+      window.location.replace(dinosaurQuiz/result-a.html)
+      //go to result-a.html
+    }
   }
