@@ -39,8 +39,11 @@ function questions() {
   function results() {
     num = total.map(Number)
     results = num[0] + num[1] + num[2] + num[3] + num[4]
-    if (results < 6) {
-      window.location.replace(dinosaurQuiz/result-a.html)
-      //go to result-a.html
+    if (results < 26) {
+      window.location.href=("http://localhost:3000/result-a.html")      //go to result-a.html
+    } else if (results <51) {
+      window.location.href=("http://localhost:3000/result-b.html")
+    } else {
+      window.location.href=("http://localhost:3000/result-c.html")
     }
   }
