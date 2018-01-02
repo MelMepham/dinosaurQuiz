@@ -40,10 +40,10 @@ function questions() {
     num = total.map(Number)
     results = num[0] + num[1] + num[2] + num[3] + num[4]
     if (results < 26) {
-      window.location.href=("http://localhost:3000/result-a.html")      //go to result-a.html
+      window.location.href=("http://dinosaurquiz.github.io/result-a.html")      //go to result-a.html
     } else if (results <51) {
-      window.location.href=("http://localhost:3000/result-b.html")
+      window.location.href=("http://dinosaurquiz.github.io/result-b.html")
     } else {
-      window.location.href=("http://localhost:3000/result-c.html")
+      window.location.href=("http://dinosaurquiz.github.io/result-c.html")
     }
   }
