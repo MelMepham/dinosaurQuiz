@@ -7,7 +7,7 @@ function start() {
 
 let total = []
 let answered = 0
-let quesQ = ["Do you think you are mostly", "Which super power would you rather have?", "You have to chhange your name to one of these, which would you prefer?", "Your spirit animal is closest to..", "How did 2017 treat you?"]
+let quesQ = ["Do you think you are mostly", "Which super power would you rather have?", "You have to change your name to one of these, which would you prefer?", "Your spirit animal is closest to..", "How did 2017 treat you?"]
 let quesA = [
   ["Friendly", "Invisibility", "Larry", "Bird", "Best year of my life!"],
   ["Angry", "Fire breathing", "Garry", "Fish", "Thankfully its OVER!"],
@@ -39,9 +39,9 @@ function questions() {
   function results() {
     num = total.map(Number)
     results = num[0] + num[1] + num[2] + num[3] + num[4]
-    if (results < 26) {
+    if (results < 30) {
       window.location.href=("https://melmepham.github.io/dinosaurquiz.github.io/result-a.html")      //go to result-a.html
-    } else if (results <51) {
+    } else if (results <60) {
       window.location.href=("https://melmepham.github.io/dinosaurquiz.github.io/result-b.html")
     } else {
       window.location.href=("https://melmepham.github.io/dinosaurquiz.github.io/result-c.html")
