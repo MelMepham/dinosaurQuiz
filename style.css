@@ -15,7 +15,7 @@ h2{
 p{
   font-size: 20px;
   font-family: 'Courgette', cursive !important;
-  text-align: center;
+  text-align: center !important;
   color: #465694;
 }
 
@@ -28,8 +28,8 @@ body{
 }
 
 img{
-  display: block; !important
-  margin: auto; !important
+  display: block !important;
+  margin: auto !important; 
   border-radius: 50% !important;
 
 }
