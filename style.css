@@ -14,7 +14,7 @@ h2{
 
 p{
   font-size: 20px;
-  font-family: 'Courgette', cursive; !important
+  font-family: 'Courgette', cursive !important;
   text-align: center;
   color: #465694;
 }
@@ -30,14 +30,14 @@ body{
 img{
   display: block; !important
   margin: auto; !important
-  border-radius: 50%; !important
+  border-radius: 50% !important;
 
 }
 
 .img{
   display: block; !important
   margin: auto; !important
-  border-radius: 50%; !important
+  border-radius: 50% !important;
 
 }
 #quizBox{
