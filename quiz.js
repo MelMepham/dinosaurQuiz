@@ -39,9 +39,9 @@ function questions() {
   function results() {
     num = total.map(Number)
     results = num[0] + num[1] + num[2] + num[3] + num[4]
-    if (results < 40) {
+    if (results < 41) {
       window.location.href=("https://melmepham.github.io/dinosaurquiz.github.io/result-a.html")      //go to result-a.html
-    } else if (results <60) {
+    } else if (results < 61) {
       window.location.href=("https://melmepham.github.io/dinosaurquiz.github.io/result-b.html")
     } else {
       window.location.href=("https://melmepham.github.io/dinosaurquiz.github.io/result-c.html")
